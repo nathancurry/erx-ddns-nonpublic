@@ -11,10 +11,10 @@ I set this up for a domain on NameCheap, but it likely is adaptable for many reg
 These correspond to DynDNS stuff
 
 ```
-host
-domain
-ddns_password
-protocol
+host           ## subdomain
+domain         ## ahem
+ddns_password  ## this is your account password, which is pretty sweet i guess
+protocol       ## I guess this is to tell the ddns folks it's a namecheap account
 ```
 
 2. copy script into place and make it executable
