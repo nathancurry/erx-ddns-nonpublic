@@ -13,9 +13,11 @@ These correspond to DynDNS stuff
 ```
 host           ## subdomain
 domain         ## ahem
-ddns_password  ## this is your account password, which is pretty sweet i guess
-protocol       ## I guess this is to tell the ddns folks it's a namecheap account
+ddns_password  ## in NameCheap, this is on the advanced DNS page by Dynamic DNS
 ```
+
+There are other variables.  I removed `protocol` because it doesn't seem necessary and I like less things.
+
 
 2. copy script into place and make it executable
 
@@ -32,6 +34,12 @@ set system task-scheduler task updateIP executable path /config/scripts/update_i
 set system task-scheduler task updateIP interval 1h
 save;commit
 ```
+
+### Note
+
+If you were doing this in a more vanilla Linux, you would assign the `current_ip` variable with dig, nslookup, or a curl to hit some API you like.
+
+In step 3, you would probably use cron.
 
 ## Links
 

@@ -4,7 +4,6 @@
 host=""
 domain=""
 ddns_password=""
-protocol=namecheap
 
 ### END USER CONFIG #
 #####################
@@ -20,6 +19,6 @@ base_url=https://dynamicdns.park-your-domain.com/update
 
 
 if [ -n "$new_ip" ] && [ "$new_ip " != "$current_ip " ]; then
-	  curl "${base_url}?protocol=${protocol}&host=${host}&domain=${domain}&password=${ddns_password}&ip=${new_ip}"
+	  curl -p "${base_url}?host=${host}&domain=${domain}&password=${ddns_password}&ip=${new_ip}"
 fi 
 
