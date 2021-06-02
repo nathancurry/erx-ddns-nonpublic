@@ -37,9 +37,9 @@ save;commit
 
 ### Note
 
-If you were doing this in a more vanilla Linux, you would assign the `current_ip` variable with dig, nslookup, or a curl to hit some API you like.
+If you were doing this on some Linux that doesn't have `host`, you would assign the `current_ip` variable with dig, nslookup, or a curl to hit some API you like.
 
-In step 3, you would probably use cron.
+In step 3, you would probably use cron most of the time.
 
 ## Links
 
